@@ -15,12 +15,20 @@ It is a console-based calculator that performs basic arithmetic, scientific oper
 
 ---
 
-## 📂 Folder Structure
+## 📁 Folder Structure
 
-Beginner_Tasks/
-└── EnhancedCalculator/
-└── EnhancedCalculator.java
-└── README.md
+```
+ShadowFox/
+├── Beginner_Tasks/
+│   └── EnhancedCalculator/
+│       ├── EnhancedCalculator.java
+│       └── README.md
+├── Intermediate_Tasks/
+│   └── (Coming Soon)
+├── Advanced_Tasks/
+│   └── (Coming Soon)
+```
+
 
 ---
 
