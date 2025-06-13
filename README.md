@@ -23,10 +23,6 @@ ShadowFox/
 │   └── EnhancedCalculator/
 │       ├── EnhancedCalculator.java
 │       └── README.md
-├── Intermediate_Tasks/
-│   └── (Coming Soon)
-├── Advanced_Tasks/
-│   └── (Coming Soon)
 ```
 
 
