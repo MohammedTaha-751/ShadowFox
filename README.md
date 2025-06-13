@@ -20,9 +20,9 @@ It is a console-based calculator that performs basic arithmetic, scientific oper
 ```
 ShadowFox/
 ├── Beginner_Tasks/
-│   └── EnhancedCalculator/
-│       ├── EnhancedCalculator.java
-│       └── README.md
+    └── EnhancedCalculator/
+        ├── EnhancedCalculator.java
+        └── README.md
 ```
 
 
