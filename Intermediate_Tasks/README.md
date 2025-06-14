@@ -17,6 +17,7 @@ It demonstrates a simple **Bank Account Management System** in Java, with **unit
 
 ---
 ## 📂 Folder Structure
+```
 ShadowFox
 └── Intermediate_Tasks
     └── BankAccountSystem
@@ -24,6 +25,7 @@ ShadowFox
             └── bank
                 ├── BankAccount.java
                 └── BankAccountTest.java
+```
 ---
 
 ## 🧪 Technologies Used
