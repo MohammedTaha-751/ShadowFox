@@ -13,7 +13,7 @@ It demonstrates a simple **Bank Account Management System** in Java, with **unit
 - 💸 Withdrawal with balance checks  
 - 💼 Balance inquiry  
 - 📜 Transaction history  
-- ✅ JUnit 4 tests for all major features
+- ✅ JUnit 4 tests for all the major features
 
 ---
 ## 📂 Folder Structure
