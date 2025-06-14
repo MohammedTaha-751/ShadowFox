@@ -1,1 +1,0 @@
-This folder contains Intermediate level internship tasks.
