@@ -1,49 +1,59 @@
 package bank;
 
 import static org.junit.Assert.*;
-import org.junit.Before;
-import org.junit.Test;
 import java.util.List;
+import org.junit.Test;
 
 public class BankAccountTest {
 
-    private BankAccount account;
-
-    @Before
-    public void setUp() {
-        account = new BankAccount("Mohammed Taha Ahamed");
-        System.out.println("\n================================================");
-        System.out.println("👤 Account Created: " + account.getAccountHolder());
-        System.out.println("================================================");
-    }
-
     @Test
-    public void testInitialBalance() {
+    public void demoAllFunctionsInOrder() {
+        BankAccount account = new BankAccount("Mohammed");
+        System.out.println("\n==============================");
+        System.out.println("👤 Account Created: " + account.getAccountHolder());
+        System.out.println("==============================");
+
+        // Initial balance check
         System.out.println("\n🟡 [Test] Initial Balance");
         assertEquals(0.0, account.getBalance(), 0.001);
         System.out.println("✅ Initial balance is correct: ₹" + account.getBalance());
-    }
 
-    @Test
-    public void testWithdrawFail_InsufficientBalance() {
+        // Deposit test
+        System.out.println("\n🟡 [Test] Deposit ₹1000");
+        account.deposit(1000);
+        System.out.println("💰 Deposited ₹1000");
+        assertEquals(1000.0, account.getBalance(), 0.001);
+        System.out.println("✅ Balance after deposit: ₹" + account.getBalance());
+
+        // Withdraw success
+        System.out.println("\n🟡 [Test] Withdraw ₹500 from ₹2000");
+        account.deposit(1000);  // total now ₹2000
+        boolean result = account.withdraw(500);
+        assertTrue(result);
+        System.out.println("💸 Withdrawn ₹500");
+        System.out.println("✅ Balance after withdrawal: ₹" + account.getBalance());
+
+        // Withdraw failure
         System.out.println("\n🟡 [Test] Withdraw ₹100 from ₹0 (Expected: Fail)");
-        boolean result = account.withdraw(100);
-        assertFalse(result);
+        BankAccount emptyAccount = new BankAccount("Mohammed");
+        boolean failed = emptyAccount.withdraw(100);
+        assertFalse(failed);
         System.out.println("⚠️ Withdrawal failed due to insufficient balance.");
-        System.out.println("✅ Balance remains: ₹" + account.getBalance());
-    }
+        System.out.println("✅ Balance remains: ₹" + emptyAccount.getBalance());
 
-    @Test
-    public void testTransactionHistory() {
+        // Transaction history
         System.out.println("\n🟡 [Test] Transaction History");
-        account.deposit(500);
-        account.withdraw(200);
-        List<String> history = account.getTransactionHistory();
-        assertEquals(2, history.size());
+        BankAccount historyAccount = new BankAccount("Mohammed");
+        historyAccount.deposit(500);
+        historyAccount.withdraw(200);
+        List<String> history = historyAccount.getTransactionHistory();
+        assertEquals(3, history.size());
         System.out.println("🧾 History:");
         for (String entry : history) {
             System.out.println("   • " + entry);
         }
         System.out.println("✅ Transaction history verified.");
+
+        System.out.println("✅ All transactions completed successfully. Thank you!");
     }
 }

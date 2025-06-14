@@ -12,14 +12,14 @@ public class BankAccount {
         this.accountHolder = accountHolder;
         this.balance = 0.0;
         this.transactionHistory = new ArrayList<>();
+        transactionHistory.add("Account opened with balance ₹0.0");
     }
 
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
             transactionHistory.add("Deposited ₹" + amount);
-        } else {
-            transactionHistory.add("Failed deposit attempt: ₹" + amount);
+            System.out.println("₹" + amount + " deposited successfully.");
         }
     }
 
@@ -27,9 +27,10 @@ public class BankAccount {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
             transactionHistory.add("Withdrew ₹" + amount);
+            System.out.println("₹" + amount + " withdrawn successfully.");
             return true;
         } else {
-            transactionHistory.add("Failed withdrawal attempt: ₹" + amount);
+            System.out.println("Insufficient balance.");
             return false;
         }
     }
