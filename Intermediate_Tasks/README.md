@@ -16,6 +16,15 @@ It demonstrates a simple **Bank Account Management System** in Java, with **unit
 - ✅ JUnit 4 tests for all major features
 
 ---
+## 📂 Folder Structure
+ShadowFox
+└── Intermediate_Tasks
+    └── BankAccountSystem
+        └── src
+            └── bank
+                ├── BankAccount.java
+                └── BankAccountTest.java
+---
 
 ## 🧪 Technologies Used
 
