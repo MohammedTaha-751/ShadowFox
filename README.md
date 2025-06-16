@@ -1,6 +1,6 @@
 # 🌟 ShadowFox Java Internship
 
-This repository contains my task submissions for the **ShadowFox Java Development Internship**.
+This repository contains all my task submissions for the **ShadowFox Java Development Internship**.
 
 ---
 
@@ -11,7 +11,21 @@ This repository contains my task submissions for the **ShadowFox Java Developmen
 - 📇 Contact Manager System
 
 ### Intermediate Tasks
-- 💳 Bank Account Management System with JUnit Testing
+- 💳 Bank Account Management System with JUnit Testing  
+- 📦 Inventory Management System with Java GUI, Item ID & Quantity
+
+---
+
+## 🧪 Tech Stack
+
+- Java  
+- Java Swing  
+- Eclipse IDE  
+- JUnit (for testing)
+
+---
+
+## 📂 Project Structure
 
 ```
 ShadowFox
@@ -19,11 +33,15 @@ ShadowFox
 │   ├── EnhancedCalculator
 │   └── ContactManager
 └── Intermediate_Tasks
-    └── BankAccountSystem
+    ├── BankAccountSystem
+    │   └── src
+    │       └── bank
+    │           ├── BankAccount.java
+    │           └── BankAccountTest.java
+    └── InventoryManagementSystem
         └── src
-            └── bank
-                ├── BankAccount.java
-                └── BankAccountTest.java
+            └── inventory
+                └── InventoryManager.java
 ```
 
 ---
@@ -31,10 +49,10 @@ ShadowFox
 ## 👨‍💻 Author
 
 **Mohammed Taha Ahamed**  
-[GitHub](https://github.com/MohammedTaha-751)
+[GitHub Profile »](https://github.com/MohammedTaha-751)
 
 ---
 
 ## 📌 Tags
 
-`#Java` `#JUnit` `#OOP` `#ShadowFox` `#Internship`
+`#Java` `#Swing` `#JUnit` `#InventorySystem` `#Internship` `#ShadowFox` `#LearningByDoing` `#GitHub`
